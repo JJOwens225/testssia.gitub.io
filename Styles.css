@@ -1,35 +1,231 @@
-* {
-margin: 0;
-padding: 0;
-text-decoration: none;
-list-style: none;
-}
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    margin: 0;
 }
+
 .page {
     height: 100vh;
     width: 100vw;
-    background-image: url(/Test/CSS/Enfants2.jpg);
+    background-image: url(/Sans\ titre-1.png);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    padding: 30px; /* Ajout du padding pour l'ensemble de la page */
+    box-sizing: border-box; /* Inclut le padding dans le calcul de la taille */
 }
+
 .navbar {
-    padding: 30px;
-    position: absolute;
-    box-sizing: border-box;
+    padding-right: 27px;
+    padding-left: 27px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    align-items: center; /* Centrer verticalement le contenu de la navbar */
 }
-.logo {
-    position: relative;
-    border: 3px solid black;
-    height: 250px;
-    width: 200px;
+
+
+.navlinks ul {
+    list-style: none;
+    display: flex;
+}
+
+.navlinks li {
+    margin-right: 50px; /* Espacement entre les éléments de la liste (ajustez selon vos besoins) */
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bolder;
+ 
+}
+
+.navlinks  ul li :hover ,
+.navlinks ul li .active {
+    border-top:0 ;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: solid 3px red;
+    padding-bottom: 10px;
+    transition-duration: 200ms;
+}
+
+.defilement {
+    width: 500px;
+    overflow: hidden; 
+    padding-top: 4px;
+    padding-left: 350px;
+    padding-right: 150px;
+    padding-bottom: 0px;
+    margin-top: 50px;
+    margin-left: 640px;
+    box-sizing: border-box;
+    border-radius: 15px 0 0 15px ;
+    border-right: solid 5px #09be71;
+   
+    
+    
+}
+
+.slides { 
+  
+   
+   animation: glisse 10s infinite ;
+   width: 2400px;
+   margin-left: 150px;
+   margin-right: 150px;
+   height: 200px;
+
+}
+.slide { 
+    
+    float: left;
     
 
-} 
-.navbar a {
-    color: white;
 }
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-500px);
+        
+    }
+    43% {
+        transform: translateX(-500px);
+        
+    }
+    66% {
+        transform: translateX(-1000px);
+    }
+    76% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.texte {
+    width: 300px; 
+    font-size: 2em;
+    position: relative;
+    bottom: 360px;
+    margin-left: 28px;
+}
+.boutton{
+    position: relative;
+    left: 430px;
+    bottom: 150px;
+    border: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    background: transparent;
+    margin-right: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    
+    
+}
+
+.boutton:hover{
+ 
+
+    padding-bottom: 10px;
+    transition-duration: 200ms;
+    border-bottom: solid 3px #0f04d2 ;
+    
+    
+}
+
+.contenuefoot { 
+    position: relative;
+    justify-content: center;
+
+}
+.foot{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.p{ 
+    align-items: center;
+    font-family: sans-serif;
+    
+}
+.foot a{ 
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.foot ul{
+    list-style: none;
+}
+.foot h3{ 
+   font-family: sans-serif;
+   font-weight: bolder;
+   
+   
+}
+.foot i{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0);
+    color: #09be71;
+    border-radius: 50px;
+    padding: 10px;
+    /*padding-top: 80px;*/
+    transition-duration: 500ms;
+}
+.foot i:hover{
+    transition-duration: 800ms;
+    color: white;
+    background-color: #09be71;
+    border-radius: 50px;
+    padding: 10px;
+    position: static;
+}
+.copyright{
+    position: absolute;
+    right: 42%;
+    font-family: sans-serif;
+    padding-top: 80px;
+}
+
+.footlink ul{
+    position: absolute; 
+    top: 23%;
+    left: 86.7%;
+    list-style: none;
+
+
+}
+.footlink a{
+    text-decoration: none;
+    color: black;
+    
+}
+.footlink a:hover{
+    padding-bottom: 5px;
+    transition-duration: 200ms;
+    border-bottom: solid 3px #09be71 ;
+}
+
+
+/*.fb{
+   list-style: none;
+   color: #0f04d2;
+}
+.twi{
+    list-style: none;
+    color: #09be71;
+}
+.ig{
+    list-style: none;
+    color:red;
+}*/
